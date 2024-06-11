@@ -9,3 +9,8 @@ clean:
 
 test:
 	go test -v ./...
+
+install-ebpf-deps:
+	sudo apt-get install bpfcc-tools linux-headers-$(uname -r)
+	sudo apt-get install libbpf-dev
+
